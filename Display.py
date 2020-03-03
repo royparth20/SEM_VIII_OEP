@@ -1,6 +1,7 @@
 from tkinter import *
 import tkinter.font as font
 from TicTacToe import TicTacToe
+import random
 # from Tkinter import font
 
 
@@ -10,6 +11,7 @@ class Board(object):
         self.btnArray = []
         self.createFrame()
         self.createButtonPlane()
+        x=random.randrange(0,8)
         for (_,j) in self.btnArray[0].items():
             self.textSetBtn(j, "x")
         # print("btn Array ")

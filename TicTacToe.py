@@ -171,5 +171,4 @@ class TicTacToe:
                     bestDepth = self.depth
                 else:
                     pass
-
         return self.bestMove
